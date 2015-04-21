@@ -16,7 +16,6 @@ class LinkQueueActor(parseQueue: ActorRef) extends Actor with ActorLogging {
   // you implementation. You are welcome to modify these, however, this
   // is what we used for our implementation.
   val queue        = Queue[String]()
-  val fetchers     = Set[ActorRef]()
   var limit        = 500
 
   def receive = {
